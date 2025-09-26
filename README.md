@@ -1,18 +1,17 @@
 # sample-test
-Git練習用
+flowchart TD
 
-テスト用
+A[文書作成/改訂<br>（担当者）] --> B[Excelシート冒頭に<br>版数・作成日・改訂者・改訂内容を記載]
+B --> C[SharePointに保存]
+C --> D{承認/確定?}
 
+D -- いいえ --> A
+D -- はい --> E[Excelに電子署名を付与]
+E --> F[最終版として配布/提出]
 
-2025/09/01　テスト
-2025/09/01　テスト
-2025/09/01　テスト
-
-```mermaid
-graph TD
-  main --> capture --> preprocess --> infer --> decision --> plc_client
-  main --> api --> infer
-
-
+%% 検証フェーズ
+F --> G[監査員確認]
+G --> H[シート履歴と<br>SharePointのバージョン履歴を照合]
+G --> I[電子署名の有効性を確認]
 
 
