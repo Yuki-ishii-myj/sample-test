@@ -1,4 +1,4 @@
-
+```mermaid
 flowchart TD
 
 A[文書作成/改訂<br>（担当者）] --> B[Excelシート冒頭に<br>版数・作成日・改訂者・改訂内容を記載]
